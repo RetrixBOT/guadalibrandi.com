@@ -1,5 +1,7 @@
-const mensaje = "Se acerca tu cumple, y este es tu regalo de parte de Gene y Retrix ❤️";
-const mensajeElement = document.getElementById("mensaje");
+const mensaje = "Se acerca tu cumple, y si bien faltan unos días aún, queriamos que tu regalo llegara en tiempo y forma\nQuisimos regalarte algo especial, algo que sabemos que siempre fue tu sueño tener, para hacer algo que siempre te gustó\nasí que\neste es tu regalo de parte de Gene y Retrix ❤️";
+const mensajeElement1 = document.getElementById("mensaje1");
+const mensajeElement2 = document.getElementById("mensaje2");
+const mensajeElement3 = document.getElementById("mensaje3");
 const contadorElement = document.getElementById("contador-regresivo");
 
 const passwordContainer = document.getElementById("password-container");
@@ -8,14 +10,24 @@ const passwordForm = document.getElementById("password-form");
 const passwordInput = document.getElementById("password");
 
 let index = 0;
+let element = 1;
 
 function escribirMensaje() {
   if (index < mensaje.length) {
-    mensajeElement.innerHTML += mensaje.charAt(index);
+    if (element == 1){
+      mensajeElement1.innerHTML += mensaje.charAt(index);
+    }
+    else if (element == 2){
+      mensajeElement2.innerHTML += mensaje.charAt(index);
+    }
+    else {
+      mensajeElement3.innerHTML += mensaje.charAt(index);
+    }
+    if (mensaje.charAt(index) == '\n') element++;
     index++;
     setTimeout(escribirMensaje, 100);
   } else {
-    contadorRegresivo(3);
+    contadorRegresivo(10);
   }
 }
 
