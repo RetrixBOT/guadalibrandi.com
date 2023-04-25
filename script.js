@@ -1,4 +1,4 @@
-const mensaje = "Se acerca tu cumple, y si bien faltan unos días aún, queriamos que tu regalo llegara en tiempo y forma\nQuisimos regalarte algo especial, algo que sabemos que siempre fue tu sueño tener, para hacer algo que siempre te gustó\nasí que\neste es tu regalo de parte de Gene y Retrix ❤️";
+const mensaje = "Se acerca tu cumpleaños, y si bien faltan unos días aún, queríamos que tu regalo llegara en tiempo y forma.\nQuisimos regalarte algo especial, algo que sabemos que siempre fue tu sueño tener, para que puedas hacer algo que siempre te gustó.\nAsí que este es tu regalo de parte de Gene y Retrix ❤️";
 const mensajeElement1 = document.getElementById("mensaje1");
 const mensajeElement2 = document.getElementById("mensaje2");
 const mensajeElement3 = document.getElementById("mensaje3");
