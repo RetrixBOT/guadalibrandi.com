@@ -22,6 +22,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 /*-------------------------animations-----------------------*/
 @keyframes transitionAnimation {
@@ -109,7 +110,10 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
-
+#imagen {
+  filter: blur(300px); /* Aplicamos un desenfoque inicial de 10px */
+  height: 25rem;
+}
 button:hover {
   background-color: white;
   color: var(--bgColor);
