@@ -63,7 +63,7 @@ passwordContainer.style.display = "block";
 passwordForm.addEventListener("submit", function (event) {
   event.preventDefault();
   const password = passwordInput.value;
-  if (password === "guada123") {
+  if (password === "supercalifragilisticoespialidoso") {
     passwordContainer.style.display = "none";
     mensajeContainer.style.display = "block";
     escribirMensaje();
